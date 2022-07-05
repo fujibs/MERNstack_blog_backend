@@ -49,6 +49,8 @@ app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, '/client/build', 'index.html'));
 });
 
-app.listen(process.env.PORT || 8080, () => {
+const PORT = process.env.PORT || 8080;
+
+app.listen(PORT, () => {
   console.log("Connected on PORT", PORT);
 });
