@@ -6,8 +6,9 @@
     "node": "16.x"
   },
   "scripts": {
-    "start": "nodemon index.js",
-    "heroku-postbuild": "npm install && npm run build"
+    "start": "node index.js",
+    "build": "webpack",
+    "heroku-postbuild": "echo Skip build on Heroku"
   },
   "author": "",
   "license": "ISC",
