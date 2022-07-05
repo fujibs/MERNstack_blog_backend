@@ -10,6 +10,10 @@ const multer = require("multer");
 const cors = require("cors");
 const path = require("path");
 
+app.get('/', (req, res) => {
+  res.json({ greeting: "Hello World!"})
+})
+
 dotenv.config();
 app.use(express.json());
 app.use(cors());
